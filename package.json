@@ -1,0 +1,20 @@
+{
+  "name": "landing-diazrdv",
+  "version": "1.0.0",
+  "description": "gul-onepage-semantic-jade-sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.1"
+  },
+  "dependencies": {
+    "gulp-connect": "^4.0.0",
+    "semantic-ui": "^2.1.8"
+  }
+}

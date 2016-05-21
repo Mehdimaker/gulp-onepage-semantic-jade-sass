@@ -1,0 +1,195 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+
+		link(href='css/style.css', rel='stylesheet')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/semantic.min.css')
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js")
+		script(src='semantic/dist/semantic.min.js')
+		script(src='js/script.js')
+	
+	body
+
+		// Navbar Menu
+		.navbar.navone.ui.top.fixed.menu.transition.inverted.secondary.pointing
+			.ui.container
+				a.item.img(href='#home')
+					img(src="img/logo.png")
+				.right.menu
+					a#navicon.closed.btn.toc.item
+						svg#ht(viewbox='0 0 15 15')
+							rect(x='3', y='5', width='9', height='1')
+						svg#hm(viewbox='0 0 15 15')
+							rect(x='3', y='7', width='9', height='1')
+						svg#hb(viewbox='0 0 15 15')
+							rect(x='3', y='9', width='9', height='1')
+					a.ui.item.home.active(href="#home") Home
+					a.ui.item.one(href="#one") One
+					a.ui.item.two(href="#two") Two
+					a.ui.item.three(href="#three") Three
+					a.ui.item.four(href="#four") Four
+					a.ui.item.five(href="#five") Five
+					
+		// Sidebar Menu
+		.navbar.ui.vertical.inverted.sidebar.menu.right
+			a.ui.item.home.active(href="#home") Home
+			a.ui.item.one(href="#one") One
+			a.ui.item.two(href="#two") Two
+			a.ui.item.three(href="#three") Three
+			a.ui.item.four(href="#four") Four
+			a.ui.item.five(href="#five") Five
+
+		// Page Contents
+		.pusher
+
+			// Home Page
+			#home.ui.inverted.vertical.center.aligned.segment
+				.ui.text.container
+					h1.ui.inverted.header
+						| My Project
+					h2 Do whatever you want when you want to.
+					.ui.huge.primary.button
+						| Get Started 
+						i.right.arrow.icon
+
+			// Section one
+			section#one
+				.ui.vertical.stripe.segment
+					.ui.center.aligned.text.container
+						h2.ui.header Member
+					.ui.three.doubling.stackable.cards.grid.container
+							.ui.card
+								.image
+									img(src='http://placehold.it/650x650')
+								.content
+									.header John Doe
+									.meta
+										a CEO
+									.description John Doe lives in New York.
+								.extra.content
+									a(href="#")
+										i.large.facebook.link.icon
+									a(href="#")
+										i.large.twitter.link.icon
+									a(href="#")
+										i.large.github.link.icon
+							.ui.card
+								.image
+									img(src='http://placehold.it/650x650')
+								.content
+									.header John Doe
+									.meta
+										a CEO
+									.description John Doe lives in New York.
+								.extra.content
+									a(href="#")
+										i.large.facebook.link.icon
+									a(href="#")
+										i.large.twitter.link.icon
+									a(href="#")
+										i.large.github.link.icon
+							.ui.card
+								.image
+									img(src='http://placehold.it/650x650')
+								.content
+									.header John Doe
+									.meta
+										a CEO
+									.description John Doe lives in New York.
+								.extra.content
+									a(href="#")
+										i.large.facebook.link.icon
+									a(href="#")
+										i.large.twitter.link.icon
+									a(href="#")
+										i.large.github.link.icon
+
+			// Section two
+			section#two
+				.ui.vertical.stripe.segment
+					.ui.center.aligned.text.container
+						h2.ui.header Work
+					.ui.four.column.doubling.stackable.grid.container
+							.column
+								a.ui.fluid.image(href='#')
+									img(src='http://semantic-ui.com/images/wireframe/image-text.png')
+							.column
+								a.ui.fluid.image(href='#')
+									img(src='http://semantic-ui.com/images/wireframe/image-text.png')
+							.column
+								a.ui.fluid.image(href='#')
+									img(src='http://semantic-ui.com/images/wireframe/image-text.png')
+							.column
+								a.ui.fluid.image(href='#')
+									img(src='http://semantic-ui.com/images/wireframe/image-text.png')
+
+			// Section three
+			section#three.ui.vertical.stripe.segment
+				.ui.middle.aligned.stackable.grid.container
+					.row
+						.eight.wide.column
+							h3.ui.header We Help Companies and Companions
+							p
+								| We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.
+							h3.ui.header We Make Bananas That Can Dance
+							p
+								| Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
+						.six.wide.right.floated.column
+							//img(src='http://placehold.it/650x650')
+					.row
+						.center.aligned.column
+							a.ui.huge.button Check Them Out
+
+			// Section four
+			section#four.ui.vertical.stripe.segment
+				.ui.equal.width.stackable.internally.celled.grid
+					.center.aligned.row
+						.column
+							h3 "What a Company"
+							p That is what they all say about us
+						.column
+							h3 "I shouldn't have gone with their competitor."
+							p
+								//img(src='http://placehold.it/650x650')
+								b Nan
+								|  Chief Fun Officer Acme Toys
+
+			// Section five
+			section#five.ui.vertical.stripe.segment
+				.ui.text.container
+					h3.ui.header Breaking The Grid, Grabs Your Attention
+					p
+						| Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.
+					a.ui.large.button Read More
+					h4.ui.horizontal.header.divider
+						a(href='http://semantic-ui.com/examples/homepage.html#') Case Studies
+					h3.ui.header Did We Tell You About Our Bananas?
+					p
+						| Yes I know you probably disregarded the earlier boasts as non-sequitor filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
+					a.ui.large.button I'm Still Quite Interested
+
+			//	Footer		
+			.ui.inverted.vertical.footer.segment
+				.ui.container
+					.ui.stackable.inverted.divided.equal.height.stackable.grid
+						.three.wide.column
+							h4.ui.inverted.header About
+							.ui.inverted.link.list
+								a.item(href='http://semantic-ui.com/examples/homepage.html#') Sitemap
+								a.item(href='http://semantic-ui.com/examples/homepage.html#') Contact Us
+								a.item(href='http://semantic-ui.com/examples/homepage.html#') Religious Ceremonies
+								a.item(href='http://semantic-ui.com/examples/homepage.html#') Gazebo Plans
+						.three.wide.column
+							h4.ui.inverted.header Services
+							.ui.inverted.link.list
+								a.item(href='http://semantic-ui.com/examples/homepage.html#') Banana Pre-Order
+								a.item(href='http://semantic-ui.com/examples/homepage.html#') DNA FAQ
+								a.item(href='http://semantic-ui.com/examples/homepage.html#') How To Access
+								a.item(href='http://semantic-ui.com/examples/homepage.html#') Favorite X-Men
+						.seven.wide.column
+							h4.ui.inverted.header Footer Header
+							p
+								| Extra space for a call to action inside the footer that could help re-engage users.

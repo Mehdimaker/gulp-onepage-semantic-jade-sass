@@ -1,0 +1,95 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+
+section {
+  min-height: 100vh;
+  padding-top: 50px !important; }
+
+h1 {
+  color: black; }
+
+#home {
+  height: 100vh;
+  padding-top: 50px;
+  position: relative; }
+  #home .ui.text.container {
+    height: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+.navbar {
+  height: 50px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .navbar .item.img {
+    vertical-align: middle !important;
+    height: 50px !important; }
+
+.navone {
+  border-color: transparent !important; }
+
+.navtwo {
+  background-color: white !important; }
+  .navtwo a.item {
+    color: black !important; }
+
+.ui.right.sidebar {
+  padding-top: 50px !important; }
+
+.ui.top.fixed.menu .right.menu .toc.item,
+.secondary.menu .right.menu .toc.item {
+  display: none; }
+
+#navicon.btn {
+  overflow: hidden;
+  position: absolute;
+  z-index: 5;
+  height: 50px;
+  width: 50px;
+  border: none;
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+  background-color: transparent;
+  top: 0px;
+  right: 0px;
+  padding-right: 0px;
+  padding-top: 7px; }
+  #navicon.btn svg {
+    padding: 0px;
+    fill: currentColor;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: color 250ms, -webkit-transform 500ms;
+    transition: color 250ms, transform 500ms;
+    top: 0;
+    left: 0; }
+  #navicon.btn.open #ht {
+    -webkit-transform: translate(-10%, 10%) rotate(45deg);
+    -ms-transform: translate(-10%, 10%) rotate(45deg);
+    transform: translate(-10%, 10%) rotate(45deg); }
+  #navicon.btn.open #hm {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%); }
+  #navicon.btn.open #hb {
+    -webkit-transform: translate(-10%, -10%) rotate(-45deg);
+    -ms-transform: translate(-10%, -10%) rotate(-45deg);
+    transform: translate(-10%, -10%) rotate(-45deg); }
+
+@media only screen and (max-width: 700px) {
+  .ui.top.fixed.menu .ui.item,
+  .secondary.menu .ui.item {
+    display: none !important; }
+  .ui.top.fixed.menu .right.menu .toc.item,
+  .secondary.menu .right.menu .toc.item {
+    display: block !important; } }
